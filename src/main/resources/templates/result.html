@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>결제 결과</title>
+</head>
+<body>
+<h1>결제 완료!</h1>
+<p>상품명: <span th:text="${order.productName}"></span></p>
+<p>수량: <span th:text="${order.quantity}"></span></p>
+<p>총 금액: <span th:text="${order.total}"></span>원</p>
+
+<a href="/order">다시 주문하기</a>
+</body>
+</html>
